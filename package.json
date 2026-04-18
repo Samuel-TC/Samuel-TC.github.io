@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --configuration production && npx angular-cli-ghpages --dir=dist/portafolio --branch=gh-pages --name=\"Samuel-TC\" --email=\"samueltc39.st@gmail.com\""
+    "deploy": "ng build --configuration production && npx ngh --dir=dist/portafolio --branch=gh-pages --name=\"Samuel-TC\" --email=\"samueltc39.st@gmail.com\""
   },
   "private": true,
   "dependencies": {
@@ -32,6 +32,7 @@
     "@angular/cli": "~14.0.1",
     "@angular/compiler-cli": "^14.0.0",
     "@types/jasmine": "~4.0.0",
+    "angular-cli-ghpages": "^1.0.0",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
