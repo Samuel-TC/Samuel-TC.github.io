@@ -1,38 +1,32 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400)
 $base: 0.5rem
+$accent: #6D8ED9
+$bg-dark: #010409
 $text-color: #FFFFFF
 
-
-$titulo-color: #010409
-$titulo-font-size: 1.8rem
-$titulo-font-weight: 700
-$titulo-line-height: 1.2
-$titulo-margin-bottom: 0.5rem
-
 *
-  -webkit-user-select: none /* Para navegadores basados en WebKit, como Chrome y Safari */
-  -moz-user-select: none /* Para navegadores basados en Gecko, como Firefox */
-  -ms-user-select: none /* Para navegadores basados en Edge */
-  user-select: none /* Establece la propiedad user-select para todos los navegadores */
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
 
 *
   margin: 0
 
 .home-page
-  background-color: #FFFFFF
+  background-color: $bg-dark
 
-
-.content
+// ── Wave hero container ───────────────────────────
+.hero-content
   position: relative
   display: flex
   justify-content: center
   align-items: center
   flex-direction: column
-  min-height: 105vh
-  background-color: #010409
+  min-height: 100vh
+  background-color: $bg-dark
   font-family: Roboto
   overflow: hidden
-
 
   &:before,
   &:after
@@ -45,7 +39,6 @@ $titulo-margin-bottom: 0.5rem
     animation-name: rotate
     animation-iteration-count: infinite
     animation-timing-function: linear
-    
 
   &:before
     bottom: 15vh
@@ -63,101 +56,186 @@ $titulo-margin-bottom: 0.5rem
     transform: translate(-50%, 0) rotateZ(0deg)
   50%
     transform: translate(-50%, -2%) rotateZ(180deg)
-
   100%
     transform: translate(-50%, 0%) rotateZ(360deg)
 
-h1, h2
-  color: #3E606F
+// ── Photo (removed) ─────────────────────────────
+// .hero-photo-wrapper / .hero-photo no longer used
+
+// ── Text ────────────────────────────────────────
+.hero-greeting
+  font-size: 1.1rem
+  color: #555555
+  font-weight: 400
+  margin-bottom: 0.25rem
+  position: relative
   z-index: 10
-  margin-top: 0
-  font-weight: 250
-  line-height: 1.3
-  text-align: start
+  text-align: center
 
-h1 
-  color: $titulo-color
-  font-size: 2.8rem
-  font-weight: $titulo-font-weight
-  line-height: $titulo-line-height
-  margin-bottom: $titulo-margin-bottom
+.hero-name
+  font-size: 3.2rem
+  font-weight: 700
+  line-height: 1.15
+  color: #0d1117
+  margin-bottom: 1rem
+  position: relative
+  z-index: 10
+  text-align: center
 
   @media (max-width: 680px)
-    font-size: 2.3rem
-    text-align: center
+    font-size: 2.2rem
 
-.second-title
-    color: #6D8ED9
-    font-size: 1.9rem
-    font-weight: $titulo-font-weight
-    line-height: $titulo-line-height
-    margin-bottom: $titulo-margin-bottom
+.hero-role
+  margin-bottom: 1.25rem
+  position: relative
+  z-index: 10
+  text-align: center
 
-h2
-  font-size: 1.32rem
-  @media (max-width: 680px)
-    text-align: center
+.hero-role-badge
+  display: inline-block
+  font-size: 0.85rem
+  font-weight: 700
+  letter-spacing: 0.08rem
+  text-transform: uppercase
+  padding: 0.35rem 1.1rem
+  border-radius: 999px
+  background: rgba(109, 142, 217, 0.12)
+  border: 1px solid rgba(109, 142, 217, 0.4)
+  color: $accent
 
+.hero-desc
+  font-size: 1.05rem
+  color: #444444
+  line-height: 1.8
+  margin-bottom: 1.75rem
+  position: relative
+  z-index: 10
+  text-align: center
+
+// ── Tech stack pills ─────────────────────────────
+.hero-stack
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  gap: 0.5rem
+  margin-bottom: 2rem
+  position: relative
+  z-index: 10
+
+  span
+    font-size: 0.78rem
+    font-weight: 600
+    padding: 0.25rem 0.75rem
+    border-radius: 999px
+    background: rgba(0,0,0,0.05)
+    border: 1px solid #cccccc
+    color: #333333
+
+// ── Actions row ─────────────────────────────────
+.hero-actions
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 1rem
+  flex-wrap: wrap
+  position: relative
+  z-index: 10
+  margin-bottom: 1.5rem
+
+.hero-btn-primary
+  display: inline-flex
+  align-items: center
+  gap: 0.5rem
+  padding: 0.65rem 1.5rem
+  font-size: 0.95rem
+  font-weight: 700
+  border-radius: 8px
+  background: $accent
+  color: #0d1117
+  border: none
+  cursor: pointer
+  transition: background 0.2s ease, transform 0.2s ease
+
+  &:hover
+    background: #8aaee8
+    transform: translateY(-2px)
+
+  i
+    font-size: 0.9rem
+
+.hero-btn-outline
+  display: inline-flex
+  align-items: center
+  gap: 0.5rem
+  padding: 0.65rem 1.5rem
+  font-size: 0.95rem
+  font-weight: 700
+  border-radius: 8px
+  background: transparent
+  color: $accent
+  border: 1px solid $accent
+  text-decoration: none
+  transition: background 0.2s ease, transform 0.2s ease
+
+  &:hover
+    background: rgba(109, 142, 217, 0.12)
+    transform: translateY(-2px)
+    color: $accent
+    text-decoration: none
+
+  i
+    font-size: 0.9rem
+
+.hero-socials
+  display: flex
+  justify-content: center
+  gap: 0.6rem
+  align-items: center
+  position: relative
+  z-index: 10
+
+.hero-social-link
+  width: 38px
+  height: 38px
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  border: 1px solid #666666
+  color: #222222
+  font-size: 1.1rem
+  text-decoration: none
+  transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease
+
+  &:hover
+    border-color: $accent
+    color: $accent
+    transform: translateY(-2px)
+
+// ── Arrow ────────────────────────────────────────
 .arrow
-  background-color: #010409
+  background-color: $bg-dark
   display: flex
   justify-content: center
   align-items: center
   width: 100%
   height: 5vh
-  @media (max-width: 680px)
-     height: 7vh
-
-
-
-img
-  width: 70%
-  z-index: 100
-
-a .img-contact
-    background-color: white
-    width: 40px
-    max-width: 40px
-    margin: 1rem
-    margin-left: 10rem
-    margin-bottom: 2rem
-    z-index: 200
-    transition: 0.25s
-      
-
-    @media (max-width: 680px)
-      margin: 0.5rem
-      margin-left: 1.7rem
-      margin-right: 1.7rem
-      margin-top: 3rem
-      width: 40px
-
-    &:hover
-        cursor: pointer
-        fill: #6D8ED9 !important
-        transform: scale(1.1)
-        transition: 0.25s
-      
-
-.col-md-2
-  display: flex
-  justify-content: center
-  flex-direction: column
 
   @media (max-width: 680px)
-    flex-direction: row
+    height: 7vh
 
-
-@media  ( max-width: 1500px )
-  .row
+// ── Responsive ───────────────────────────────────
+@media (max-width: 768px)
+  .hero-greeting, .hero-role
     text-align: center
-  img
-    width: 70%
-    margin-bottom: 0rem
 
-@media  ( max-width: 900px )
-  .content
-    margin-top: 0%
+  .hero-name
+    text-align: center
+
+@media (max-width: 900px)
+  .hero-content
+    padding-top: 2rem
+
 
   img
     width: 60%
