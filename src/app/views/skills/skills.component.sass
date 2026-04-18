@@ -1,18 +1,21 @@
 $bag-color: #010409
-$fount-size-title-seccion: 2rem
 $text-color: #EAEBED
+$accent: #6D8ED9
+$fount-size-title-seccion: 2rem
+
 *
-  -webkit-user-select: none /* Para navegadores basados en WebKit, como Chrome y Safari */
-  -moz-user-select: none /* Para navegadores basados en Gecko, como Firefox */
-  -ms-user-select: none /* Para navegadores basados en Edge */
-  user-select: none /* Establece la propiedad user-select para todos los navegadores */
-  
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
 .skills
     text-align: center
     color: $text-color
     background-color: $bag-color
     margin: 0
-    padding-bottom: 10rem
+    padding-bottom: 8rem
+    padding-top: 1rem
 
 .title-seccion
     font-family: Arial
@@ -20,84 +23,84 @@ $text-color: #EAEBED
     color: $text-color
     padding: 1rem
     padding-top: 2rem
-    padding-bottom: 2rem
+    padding-bottom: 2.5rem
+    letter-spacing: 0.1rem
 
-.col-md-3
-    padding: 2vh
-    margin: 0
-    width: 21%
- 
-h4
-    width: 100%
-    color: $text-color
-    position: absolute
-    bottom: 8px
-    font-size: 1.2rem
-
-.card
-    background-color: #161b2277
-    backdrop-filter: blur(1rem)
-    box-shadow: 6px
-    filter: drop-shadow(1px 1x 1px #6E5DCF) drop-shadow(-1px -1px 1px #6E5DCF)
-    border: none
-    display: block
-    margin: 0px auto
-    width: 150px
-    height: 150px
-    border-radius: 0px
+// ── Group block ────────────────────────────────
+.skill-group
+    background: linear-gradient(145deg, #161b22 0%, #0d1117 100%)
+    border: 1px solid #21262d
+    border-radius: 12px
+    padding: 1.75rem 2rem
+    margin-bottom: 1.5rem
+    text-align: left
+    transition: border-color 0.25s ease
 
     &:hover
-        filter: drop-shadow(4px 4px 4px #010409) drop-shadow(-4px -4px 4px #6d8dd9a5)
+        border-color: rgba(109, 142, 217, 0.4)
 
-img
-    margin-top: 10%
-    width: 60%
-    padding: 10px
+.skill-group-header
+    display: flex
+    align-items: center
+    gap: 0.6rem
+    margin-bottom: 1.25rem
+    padding-bottom: 0.75rem
+    border-bottom: 1px solid #21262d
 
-@media  ( max-width: 900px )
+    i
+        font-size: 1.2rem
+        color: $accent
 
-    .col-md-3
-        margin:1rem
-        margin-bottom: 1rem
-        margin-top: 1rem
-        padding: 0
-  
-       
-    .col-md-1
-        margin: 0rem
-    body
-        margin-top: 25%
-    .row
-        flex-direction: columns
-        align-items: flex-start
-    img
-        width: 50%
+    span
+        font-size: 0.75rem
+        font-weight: 700
+        letter-spacing: 0.12rem
+        text-transform: uppercase
+        color: $accent
 
-@media  ( max-width: 600px )
+// ── Pills row ──────────────────────────────────
+.skill-pills
+    display: flex
+    flex-wrap: wrap
+    gap: 0.6rem
 
-    .col-md-3
-        margin:  0rem
-        margin-bottom: 5rem
-        margin-top: 0rem
-         
+.skill-pill
+    display: flex
+    align-items: center
+    gap: 0.55rem
+    padding: 0.45rem 1rem
+    background: rgba(255,255,255,0.04)
+    border: 1px solid #30363d
+    border-radius: 999px
+    cursor: default
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease
 
-    .card
-        width: 100%
-        height: 0px
-        margin-top: 3rem
-        
-    
-    .col-md-1
-        margin: 0rem
-    body
-        margin-top: 25%
-    .row
-        flex-direction: columns
-        align-items: flex-start
-    img
-        width: 90%
-       
-    h4
+    span
+        font-size: 0.88rem
+        font-weight: 500
+        color: $text-color
+        white-space: nowrap
+
+    &:hover
+        background: rgba(109, 142, 217, 0.12)
+        border-color: $accent
+        transform: translateY(-2px)
+
+.pill-img
+    width: 20px
+    height: 20px
+    object-fit: contain
+
+.pill-icon
+    font-size: 1.1rem
+    color: $accent
+
+@media (max-width: 768px)
+    .skill-group
+        padding: 1.25rem 1rem
+
+    .skill-pill
+        padding: 0.4rem 0.75rem
         display: none
 
     .title-seccion

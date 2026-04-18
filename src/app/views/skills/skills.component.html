@@ -1,96 +1,113 @@
 <div id="skills" class="skills" [@scrollAnimation]="state">
 
-    <h3  class="title-seccion">SKILLS</h3>
+    <h3 class="title-seccion">TECHNICAL SKILLS</h3>
     <div class="container">
-        
-        <div class="row justify-content-center">
 
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/mysql.svg" >
-                    <h4>MySQL</h4>
-                    
+        <!-- Frontend -->
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <i class="bi bi-display"></i>
+                <span>Frontend</span>
+            </div>
+            <div class="skill-pills">
+                <div class="skill-pill">
+                    <img src="../assets/angular.svg" class="pill-img">
+                    <span>Angular</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-filetype-tsx pill-icon"></i>
+                    <span>React</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/html5.svg" class="pill-img">
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/css3.svg" class="pill-img">
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/sass.svg" class="pill-img">
+                    <span>Sass</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/javascript.svg" class="pill-img">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-braces pill-icon"></i>
+                    <span>TypeScript</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-bootstrap pill-icon"></i>
+                    <span>Bootstrap</span>
                 </div>
             </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/node-js.svg" >
-                    <h4>NODE JS</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card" >
-                    <img src="../assets/sass.svg" >
-                    <h4>SASS</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3"  >
-                <div class="card">
-                    <img src="../assets/css3.svg"  >
-                    <h4>CSS3</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/html5.svg" >
-                    <h4>HTML5</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/angular.svg" >
-                    <h4>ANGULAR</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/spring.svg">
-                    <h4>SPRING</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/microsoftsqlserver.svg" >
-                    <h4>SQL</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/python.svg" >
-                    <h4>PYTHON</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/php.svg" >
-                    <h4>PHP</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/java.svg" >
-                    <h4>JAVA</h4>
-                </div>
-            </div>
-
-            <div class="col-md-3">
-                <div class="card">
-                    <img src="../assets/javascript.svg" >
-                    <h4>JAVASCRIPT</h4>
-                </div>
-            </div>
-
         </div>
+
+        <!-- Backend -->
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <i class="bi bi-server"></i>
+                <span>Backend</span>
+            </div>
+            <div class="skill-pills">
+                <div class="skill-pill">
+                    <img src="../assets/node-js.svg" class="pill-img">
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-window-stack pill-icon"></i>
+                    <span>.NET Core</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/spring.svg" class="pill-img">
+                    <span>Spring Boot</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/java.svg" class="pill-img">
+                    <span>Java</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/python.svg" class="pill-img">
+                    <span>Python</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/php.svg" class="pill-img">
+                    <span>PHP</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-code-slash pill-icon"></i>
+                    <span>C#</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Databases & Cloud -->
+        <div class="skill-group">
+            <div class="skill-group-header">
+                <i class="bi bi-database"></i>
+                <span>Databases &amp; Cloud</span>
+            </div>
+            <div class="skill-pills">
+                <div class="skill-pill">
+                    <img src="../assets/mysql.svg" class="pill-img">
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-pill">
+                    <img src="../assets/microsoftsqlserver.svg" class="pill-img">
+                    <span>SQL Server</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-cloud-fill pill-icon" style="color:#FF9900"></i>
+                    <span>AWS</span>
+                </div>
+                <div class="skill-pill">
+                    <i class="bi bi-diagram-3 pill-icon"></i>
+                    <span>Entity Framework</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>

@@ -2,11 +2,11 @@ import { Component, OnInit, HostListener, ElementRef } from '@angular/core';
 import { trigger, style, transition, animate, state } from '@angular/animations'
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.sass'],
+  selector: 'app-experience',
+  templateUrl: './experience.component.html',
+  styleUrls: ['./experience.component.sass'],
   animations: [
-    trigger('scrollAnimationEducation', [
+    trigger('scrollAnimationExperience', [
       state('scrolled', style({
         transform: 'translateX(-100%)',
         opacity: 0
@@ -17,7 +17,6 @@ import { trigger, style, transition, animate, state } from '@angular/animations'
       })),
       transition('scrolled => normal', animate('1000ms ease-out')),
       transition('normal => scrolled', animate('1000ms ease-in')),
-      // Agrega esta transición
       transition('void => scrolled', [
         style({
           transform: 'translateX(-100%)',
@@ -28,7 +27,7 @@ import { trigger, style, transition, animate, state } from '@angular/animations'
     ])
   ]
 })
-export class EducationComponent implements OnInit {
+export class ExperienceComponent implements OnInit {
 
   state = 'normal'
 
@@ -38,37 +37,14 @@ export class EducationComponent implements OnInit {
   checkScroll() {
     const componentPosition = this.el.nativeElement.offsetTop
     const scrollPosition = window.pageYOffset
-    console.log(scrollPosition)
     if (scrollPosition <= componentPosition - 600) {
-
       this.state = 'scrolled'
     } else {
-
       this.state = 'normal'
-      this.inEducation()
     }
   }
 
-  inEducation() {
-    const navbarLinks = Array.from(document.getElementsByClassName('nav-link'));
-
-    navbarLinks.forEach(link => link.classList.remove('active'));
-    navbarLinks[2].classList.add('active');
-  }
-
   ngOnInit(): void {
-  }
-
-  viewSCRUM() {
-    window.open('assets/docs/SCRUM Foundation Professional Certificate.pdf', '_blank');
-  }
-
-  viewAWS() {
-    window.open('assets/docs/AWS Partner Accreditation (Technical).pdf', '_blank');
-  }
-
-  viewCS50() {
-    window.open('assets/docs/CS50x.pdf', '_blank');
   }
 
 }

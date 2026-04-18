@@ -52,7 +52,7 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {}
 
   dowland(){
-    alert('Hola')
+    window.open('assets/docs/Samuel Tinoco Calderón EN.pdf', '_blank');
   }
 
     

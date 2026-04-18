@@ -1,75 +1,79 @@
 <div name="education" class="education" [@scrollAnimationEducation]="state">
 
     <div class="container">
-
         <div class="row justify-content-center">
+            <div class="col-12">
+                <h3 class="title-seccion">EDUCATION & CERTIFICATIONS</h3>
+            </div>
+        </div>
 
+        <div class="row justify-content-center edu-grid">
 
-            <div class="col-md-10" >
-              <div class="testimotionals">
-              <div class="card-white">
-                  <h3 class="title-seccion" >EDUCATION</h3>
-              </div>
+            <!-- UCR -->
+            <div class="col-md-5 edu-col">
+                <div class="edu-card">
+                    <div class="edu-card-header">
+                        <img src="../../../assets/ucr.png" alt="UCR" class="edu-logo">
+                    </div>
+                    <div class="edu-card-body">
+                        <span class="edu-badge edu-badge-degree">Degree</span>
+                        <h3 class="edu-title">B.S. in Business Informatics</h3>
+                        <p class="edu-period"><i class="bi bi-calendar3"></i> April 2020 – December 2023</p>
+                        <p class="edu-institution">Universidad de Costa Rica · Guápiles</p>
+                        <p class="edu-desc">Trains professionals for the development and administration of computer projects, optimizing access, systematization and organization of information in business environments.</p>
+                    </div>
+                </div>
             </div>
 
-                <div class="testimotionals">
-                    <div class="card">
-                      <div class="layer">
-                        
-                      </div>
-                      <div class="content">
-                        
-                        <div class="details">
-                            <img src="../../../assets/ucr.png" alt="" width="140px">
-                            <h2>Bachilleraro En Informatica Empresarial <br> <span> 2018-Actual</span></h2>
-                          </div>
-                        <p>The Bachelor's Degree in Business Informatics trains professionals with the capacity 
-                          for the development and administration of computer projects aimed at organizing systems,
-                           resources and finances in the company, by optimizing access, systematization and organization
-                            of information.</p>
-                      
-                      </div>
+            <!-- SCRUM -->
+            <div class="col-md-5 edu-col">
+                <div class="edu-card">
+                    <div class="edu-card-header">
+                        <img src="../../../assets/CertiProf.png" alt="CertiProf" class="edu-logo">
                     </div>
-                  </div>
-
-                  <div class="testimotionals">
-                    <div class="card">
-                      <div class="layer">
-                        
-                      </div>
-                      <div class="content">
-                        <div class="details">
-                            <img src="../../../assets/CertiProf.png" alt="" width="130px"> 
-                            <h2>SCRUM Fundation <br> <span>2022-2022</span></h2>
-                          </div>
-                        <p class="text-justify" > This certification focuses on the fundamentals 
-                          of SCRUM, including the roles and responsibilities of SCRUM team members, 
-                          SCRUM events, SCRUM artifacts, and agile values and principles.
-                        </p>
-                          <button class="btn-download btn btn-primary" (click)="viewSCRUM()">Certificate </button>
-                      </div>
+                    <div class="edu-card-body">
+                        <span class="edu-badge edu-badge-cert">Certification</span>
+                        <h3 class="edu-title">SCRUM Foundation Professional Certificate</h3>
+                        <p class="edu-period"><i class="bi bi-calendar3"></i> 2022</p>
+                        <p class="edu-institution">CertiProf · SFPC 83540291</p>
+                        <p class="edu-desc">Covers SCRUM roles, events, artifacts, and agile values applied in software development teams.</p>
+                        <button class="edu-btn" (click)="viewSCRUM()"><i class="bi bi-file-earmark-pdf"></i> View Certificate</button>
                     </div>
-                  </div>
+                </div>
+            </div>
 
-                  <div class="testimotionals">
-                    <div class="card">
-                      <div class="layer">
-                        
-                      </div>
-                      <div class="content">
-                        <div class="details">
-                            <img src="../../../assets/hard.svg" alt="" width="90px">
-                            <h2>Harvard Introduction To Computer Science<br> <span>2022-2022</span></h2>
-                          </div>
-                        <p class="text-description">The course covers topics such as data structure, algorithms, 
-                          object-oriented programming, the web, and databases. Students learn to program in Python
-                           and work on various projects during the course.</p>
-                        <button class="btn-download btn btn-primary" (click)="viewCS50()">Certificate </button>
-                      </div>
+            <!-- AWS -->
+            <div class="col-md-5 edu-col">
+                <div class="edu-card">
+                    <div class="edu-card-header edu-card-header-aws">
+                        <span class="aws-icon"><i class="bi bi-cloud-fill"></i> AWS</span>
                     </div>
-                  </div>
-                  
+                    <div class="edu-card-body">
+                        <span class="edu-badge edu-badge-cert">Certification</span>
+                        <h3 class="edu-title">AWS Partner: Technical Accreditation</h3>
+                        <p class="edu-period"><i class="bi bi-calendar3"></i> 2024</p>
+                        <p class="edu-institution">Amazon Web Services · E-VMMLLV</p>
+                        <p class="edu-desc">Demonstrates proficiency in AWS cloud services including deployment, management and optimization of cloud-based applications.</p>
+                        <button class="edu-btn" (click)="viewAWS()"><i class="bi bi-file-earmark-pdf"></i> View Certificate</button>
+                    </div>
+                </div>
+            </div>
 
+            <!-- CS50 -->
+            <div class="col-md-5 edu-col">
+                <div class="edu-card">
+                    <div class="edu-card-header edu-card-header-harvard">
+                        <img src="../../../assets/hard.svg" alt="Harvard" class="edu-logo edu-logo-small">
+                    </div>
+                    <div class="edu-card-body">
+                        <span class="edu-badge edu-badge-cert">Certification</span>
+                        <h3 class="edu-title">Introduction to Computer Science (CS50)</h3>
+                        <p class="edu-period"><i class="bi bi-calendar3"></i> 2022</p>
+                        <p class="edu-institution">Harvard University</p>
+                        <p class="edu-desc">Covers data structures, algorithms, object-oriented programming, web development and databases. Programming in C and Python.</p>
+                        <button class="edu-btn" (click)="viewCS50()"><i class="bi bi-file-earmark-pdf"></i> View Certificate</button>
+                    </div>
+                </div>
             </div>
 
         </div>

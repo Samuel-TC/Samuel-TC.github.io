@@ -11,7 +11,8 @@ import { EducationComponent } from './views/education/education.component';
 import { ContactComponent } from './views/contact/contact.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BotonComponent } from './templates/boton/boton.component';
-import { ProjectComponent } from './views/project/project.component'
+import { ProjectComponent } from './views/project/project.component';
+import { ExperienceComponent } from './views/experience/experience.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectComponent } from './views/project/project.component'
     EducationComponent,
     ContactComponent,
     BotonComponent,
-    ProjectComponent
+    ProjectComponent,
+    ExperienceComponent
     
   ],
   imports: [

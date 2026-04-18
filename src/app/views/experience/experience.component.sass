@@ -1,0 +1,117 @@
+$bag-color: #010409
+$fount-size-title-seccion: 2rem
+$text-color: #EAEBED
+
+*
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.experience
+    text-align: center
+    color: $text-color
+    background-color: $bag-color
+    margin: 0
+    padding-bottom: 10rem
+
+.title-seccion
+    font-family: Arial
+    font-size: $fount-size-title-seccion
+    color: $text-color
+    padding: 1rem
+    padding-top: 2rem
+    padding-bottom: 0rem
+
+.col-md-12
+    padding: 2vh
+    margin: 0
+    width: 100%
+
+.experience-section
+    text-align: left
+    padding: 0 1.5rem
+    
+    h4
+        color: #6D8ED9
+        font-weight: 600
+        margin-top: 1rem
+        margin-bottom: 0.5rem
+        font-size: 1.1rem
+        position: static
+        width: auto
+    
+    ul
+        margin-top: 0.5rem
+        margin-bottom: 1rem
+        padding-left: 1.5rem
+        
+        li
+            font-size: 15px
+            line-height: 1.6
+            margin-bottom: 0.5rem
+            text-align: left
+
+.testimotionals
+    width: 100%
+    display: inline-block
+    margin: 1rem
+    margin-top: 0.5rem
+    margin-bottom: 0
+
+    & .card
+        position: relative
+        overflow: hidden
+        width: 100%
+        height: auto
+        margin: 0 auto
+        background: #161b2277
+        padding: 20px
+        box-sizing: border-box
+        text-align: center
+        box-shadow: 0 10px 30px rgba(0,0,0,.5)
+        border-radius: 0px
+        transition: 0.25s
+        &:hover
+            filter: drop-shadow(4px 4px 4px #010409) drop-shadow(-4px -4px 4px #6d8dd9a5)
+
+    & .card .content
+        z-index: 2
+        position: relative
+
+    & .card .content p
+        font-size: 14px
+        line-height: 24px
+        color: #EAEBED
+
+    & .card .content .details h2
+        font-size: 18px
+        color: #EAEBED
+
+    & .card .content .details h2 span
+        font-size: 1.3rem
+        color: #6E5DCF
+        transition: 0.5s
+
+    & .card:hover .content .details h2 span
+        color: white
+        position: relative
+
+.card-white
+    width: 100%
+    text-align: center
+
+.btn-primary
+    font-family: Arial
+    margin-top: 0.5rem
+    color: #FFFF
+    border-color: #010409
+    background-color: #010409
+    filter: drop-shadow(2px 2px 2px #161b2277) drop-shadow(-2px -2px 2px #161b2277)
+
+.btn-download
+    transition: 0.5s
+    &:hover
+        text-decoration: wavy
+        box-shadow: 4px 4px #161b2277
+        color: #74b3ff
