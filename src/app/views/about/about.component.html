@@ -1,46 +1,88 @@
-<div  name="about" class="about" [@scrollAnimationAbout]="state">
+<div id="about" name="about" class="about" [@scrollAnimationAbout]="state">
 
+    <h3 class="title-seccion">ABOUT</h3>
     <div class="container">
-        <div class="row justify-content-center">
-            <h3 class="title-seccion ">ABOUT</h3>
-            <div class="col-md-10">
 
-                <div class="testimotionals">
-                    <div class="card">
-                        <div class="layer">
+        <div class="about-card">
 
-                        </div>
-                        <div class="content">
-                            <br>
-                            <div class="details">
-                                <h2>Full Stack Developer<br> <span>Professional Profile</span></h2>
-                            </div>
-                            <br>
-                            <p style="font-size: 17px;  margin: 1rem;">
-                                Full Stack Developer with experience in designing and developing web applications, 
-                                specializing in technologies such as HTML, CSS, JavaScript, TypeScript, Node.js, React, 
-                                Angular, .NET, and MySQL. I focus on creating efficient, scalable solutions aligned with 
-                                user needs, combining technical skills with a practical approach to solving complex problems.
-                            </p>
-                            <br>
-                            <p style="font-size: 17px; margin: 1rem;" >
-                                Graduate in Business Informatics from the University of Costa Rica, with professional 
-                                experience developing RESTful APIs, dynamic user interfaces, and administrative applications. 
-                                I have worked with modern technologies including React, Angular, .NET 9, Node.js, and cloud 
-                                services such as AWS. I am passionate about continuous learning and staying updated with the 
-                                latest industry trends and best practices.
-                            </p>
-                            <br>
-                        </div>
+            <!-- Left: avatar + quick facts -->
+            <div class="about-left">
+                <div class="about-avatar">
+                    <i class="bi bi-person-fill"></i>
+                </div>
+                <h4 class="about-name">Samuel Tinoco Calder&oacute;n</h4>
+                <p class="about-role">Full Stack Developer</p>
+
+                <div class="about-facts">
+                    <div class="about-fact">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <span>San Jos&eacute;, Costa Rica</span>
+                    </div>
+                    <div class="about-fact">
+                        <i class="bi bi-mortarboard-fill"></i>
+                        <span>B.S. Business Informatics &mdash; UCR</span>
+                    </div>
+                    <div class="about-fact">
+                        <i class="bi bi-envelope-fill"></i>
+                        <span>samueltc39.st&#64;gmail.com</span>
+                    </div>
+                    <div class="about-fact">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>+506 8653-0599</span>
                     </div>
                 </div>
 
-
-
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="stat-value">3+</span>
+                        <span class="stat-label">Years Exp.</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-value">10+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Certs</span>
+                    </div>
+                </div>
             </div>
 
+            <!-- Right: bio + highlights -->
+            <div class="about-right">
+                <p class="about-bio">
+                    Full Stack Developer with experience designing and developing web applications,
+                    specializing in <strong>React</strong>, <strong>Angular</strong>, <strong>.NET</strong>, and <strong>Node.js</strong>.
+                    I focus on creating efficient, scalable solutions aligned with user needs,
+                    combining technical skills with a practical approach to solving complex problems.
+                </p>
+                <p class="about-bio">
+                    Graduate in Business Informatics from the University of Costa Rica. I have built
+                    RESTful APIs, dynamic user interfaces, and administrative applications using modern
+                    stacks including React, Angular, .NET 9, and cloud services such as AWS.
+                    Passionate about continuous learning and staying current with industry best practices.
+                </p>
+
+                <div class="about-highlights">
+                    <div class="about-highlight">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>RESTful API design with Node.js &amp; .NET</span>
+                    </div>
+                    <div class="about-highlight">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Frontend with React, Angular &amp; TypeScript</span>
+                    </div>
+                    <div class="about-highlight">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>Cloud deployments on AWS Amplify &amp; IIS</span>
+                    </div>
+                    <div class="about-highlight">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <span>MySQL &amp; SQL Server database administration</span>
+                    </div>
+                </div>
+            </div>
 
         </div>
-
     </div>
 </div>

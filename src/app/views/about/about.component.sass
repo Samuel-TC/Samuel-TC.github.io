@@ -1,19 +1,20 @@
 $bag-color: #010409
 $text-color: #EAEBED
 $fount-size-title-seccion: 2rem
+$accent: #6D8ED9
 
 *
-  -webkit-user-select: none /* Para navegadores basados en WebKit, como Chrome y Safari */
-  -moz-user-select: none /* Para navegadores basados en Gecko, como Firefox */
-  -ms-user-select: none /* Para navegadores basados en Edge */
-  user-select: none /* Establece la propiedad user-select para todos los navegadores */
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
 
 .about
-    text-align: center
     color: $text-color
     background-color: $bag-color
     margin: 0
-    padding-bottom: 10rem
+    padding-bottom: 8rem
+    padding-top: 1rem
 
 .title-seccion
     font-family: Arial
@@ -21,7 +22,158 @@ $fount-size-title-seccion: 2rem
     color: $text-color
     padding: 1rem
     padding-top: 2rem
-    padding-bottom: 0rem
+    padding-bottom: 2rem
+    text-align: center
+
+// ── Main card ───────────────────────────────────
+.about-card
+    display: flex
+    gap: 2rem
+    background: linear-gradient(145deg, #161b22 0%, #0d1117 100%)
+    border: 1px solid #21262d
+    border-radius: 16px
+    overflow: hidden
+    align-items: flex-start
+
+// ── Left column ────────────────────────────────
+.about-left
+    min-width: 240px
+    max-width: 260px
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 2rem 1.5rem
+    background: rgba(109, 142, 217, 0.04)
+    border-right: 1px solid #21262d
+    text-align: center
+    gap: 0.5rem
+
+.about-avatar
+    width: 90px
+    height: 90px
+    border-radius: 50%
+    background: rgba(109, 142, 217, 0.15)
+    border: 2px solid $accent
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 0.75rem
+
+    i
+        font-size: 3rem
+        color: $accent
+
+.about-name
+    font-size: 1rem
+    font-weight: 700
+    color: $text-color
+    margin: 0
+
+.about-role
+    font-size: 0.82rem
+    color: $accent
+    font-weight: 600
+    letter-spacing: 0.05rem
+    text-transform: uppercase
+    margin: 0
+
+.about-facts
+    display: flex
+    flex-direction: column
+    gap: 0.55rem
+    margin-top: 1rem
+    width: 100%
+    text-align: left
+
+.about-fact
+    display: flex
+    align-items: flex-start
+    gap: 0.5rem
+    font-size: 0.82rem
+    color: #8b949e
+
+    i
+        color: $accent
+        font-size: 0.85rem
+        margin-top: 0.1rem
+        flex-shrink: 0
+
+.about-stats
+    display: flex
+    justify-content: space-around
+    width: 100%
+    margin-top: 1.25rem
+    padding-top: 1.25rem
+    border-top: 1px solid #21262d
+
+.about-stat
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 0.15rem
+
+.stat-value
+    font-size: 1.4rem
+    font-weight: 700
+    color: $accent
+
+.stat-label
+    font-size: 0.7rem
+    color: #8b949e
+    text-transform: uppercase
+    letter-spacing: 0.05rem
+
+// ── Right column ───────────────────────────────
+.about-right
+    flex: 1
+    padding: 2rem 2rem 2rem 0.5rem
+    display: flex
+    flex-direction: column
+    gap: 1.25rem
+    text-align: left
+
+.about-bio
+    font-size: 0.92rem
+    color: #c9d1d9
+    line-height: 1.75
+    margin: 0
+
+    strong
+        color: $text-color
+
+.about-highlights
+    display: flex
+    flex-direction: column
+    gap: 0.6rem
+    padding-top: 0.5rem
+    border-top: 1px solid #21262d
+
+.about-highlight
+    display: flex
+    align-items: center
+    gap: 0.6rem
+    font-size: 0.88rem
+    color: #c9d1d9
+
+    i
+        color: #38bd70
+        font-size: 0.9rem
+        flex-shrink: 0
+
+// ── Responsive ───────────────────────────────────
+@media (max-width: 768px)
+    .about-card
+        flex-direction: column
+
+    .about-left
+        max-width: 100%
+        min-width: 100%
+        border-right: none
+        border-bottom: 1px solid #21262d
+        padding: 1.5rem
+
+    .about-right
+        padding: 1.5rem
 
     
 @media  ( max-width: 900px )
