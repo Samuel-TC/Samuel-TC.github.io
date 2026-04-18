@@ -1,9 +1,98 @@
 <div id="project" class="project" [@scrollAnimation]="state">
 
-    <h3  class="title-seccion">PROJECTS</h3>
+    <h3 class="title-seccion">PROJECTS</h3>
     <div class="container">
-        
-        <div class="row justify-content-center">
+        <div class="row justify-content-center g-4">
+
+            <!-- Professional Projects -->
+            <div class="col-md-6">
+                <div class="proj-card">
+                    <div class="proj-card-header proj-header-pro">
+                        <i class="bi bi-briefcase-fill proj-header-icon"></i>
+                        <span class="proj-badge proj-badge-pro">Professional</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h4 class="proj-title">Enterprise Applications</h4>
+                        <p class="proj-org"><i class="bi bi-building"></i> Empresa Movil Multimedia S.A.</p>
+                        <ul class="proj-list">
+                            <li><strong>App Popular Valores</strong> &mdash; Admin system &amp; mobile app with React, Node.js &amp; AWS</li>
+                            <li><strong>Marriott VIP Tuc&aacute;n</strong> &mdash; Hotel management website &amp; mobile app with Angular and .NET</li>
+                            <li><strong>UNA Costa Segura</strong> &mdash; Security &amp; incident management application</li>
+                            <li><strong>COPROCOM Admin</strong> &mdash; Administrative system with .NET 9 &amp; SQL Server</li>
+                        </ul>
+                        <div class="proj-tech">
+                            <span>React</span><span>Angular</span><span>.NET</span><span>Node.js</span><span>MySQL</span><span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Freelance Project -->
+            <div class="col-md-6">
+                <div class="proj-card">
+                    <div class="proj-card-header proj-header-freelance">
+                        <i class="bi bi-person-workspace proj-header-icon"></i>
+                        <span class="proj-badge proj-badge-freelance">Freelance</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h4 class="proj-title">Emergencias Zurqu&iacute;</h4>
+                        <p class="proj-org"><i class="bi bi-truck"></i> Transfer Control System</p>
+                        <p class="proj-desc">Logistics system developed for optimizing operations and internal process management. Allows efficient tracking and management of emergency transfers with a clean, professional interface.</p>
+                        <div class="proj-tech">
+                            <span>.NET Core</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Map -->
+            <div class="col-md-6">
+                <div class="proj-card">
+                    <div class="proj-card-header proj-header-personal">
+                        <i class="bi bi-map-fill proj-header-icon"></i>
+                        <span class="proj-badge proj-badge-personal">Personal</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h4 class="proj-title">Interactive Map</h4>
+                        <p class="proj-org"><i class="bi bi-geo-alt"></i> Costa Rica Province Explorer</p>
+                        <p class="proj-desc">Interact with the map of Costa Rica, check weather status by province, and search localities by canton and national district.</p>
+                        <div class="proj-tech">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>API</span>
+                        </div>
+                        <div class="proj-links">
+                            <a class="proj-btn" target="_blank" href="https://github.com/Samuel-TC/Mapa-project">
+                                <i class="bi bi-github"></i> Code
+                            </a>
+                            <a class="proj-btn proj-btn-outline" target="_blank" href="https://samuel-tc.github.io/Mapa-project/">
+                                <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reminders -->
+            <div class="col-md-6">
+                <div class="proj-card">
+                    <div class="proj-card-header proj-header-academic">
+                        <i class="bi bi-mortarboard-fill proj-header-icon"></i>
+                        <span class="proj-badge proj-badge-academic">Academic</span>
+                    </div>
+                    <div class="proj-card-body">
+                        <h4 class="proj-title">Reminders</h4>
+                        <p class="proj-org"><i class="bi bi-bell"></i> Task &amp; Event Manager</p>
+                        <p class="proj-desc">A reminder application to track important tasks, events, and dates. Supports creating and modifying reminders by date with a simple, intuitive interface.</p>
+                        <div class="proj-tech">
+                            <span>Flask</span><span>MySQL</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
 
             <div class="col-md-5">
                 <div class="card">
